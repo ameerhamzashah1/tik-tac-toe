@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tic-Tac-Toe | Ameer Hamza Shah</title>
+    <link rel="stylesheet" href="tik.css">
+    <script defer src="tik.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🕹️ Tic-Tac-Toe ❌⭕ | By Ameer Hamza</h1>
+        <button id="darkModeToggle">🔦</button>
+    </header>
+
+    <!-- Player Name Input -->
+    <div id="playerInput">
+        <h2>Enter Player Names</h2>
+        <input type="text" id="player1" placeholder="Player 1 Name">
+        <input type="text" id="player2" placeholder="Player 2 Name">
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Game Board -->
+    <div id="gameContainer" class="hidden">
+        <h2 id="playersTurn"></h2>
+        <div class="board">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+        <h2 id="result"></h2>
+        <button onclick="resetGame()">Restart</button>
+    </div>
+
+    <!-- Party Popper Animation -->
+    <div id="confetti" class="hidden">🎉🎊</div>
+</body>
+</html>
